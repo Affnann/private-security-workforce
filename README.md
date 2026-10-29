@@ -1,5 +1,7 @@
 # private-security-workforce
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23768201.svg)](https://doi.org/10.5281/zenodo.23768201)
+
 Published by [Mercenomics](https://mercenomics.org), an independent data archive on the business of force for hire.
 
 How many private security guards five countries have, year by year, from each government's own records, and, where the same official source also counts police, how many guards there are for every police officer.
@@ -89,6 +91,9 @@ Sources, download dates and terms are in [`data/README.md`](data/README.md). Cod
 
 ## Cite
 
-Azom, Kazi Affnann (2026). *private-security-workforce: official counts of private security guards by country, with police where the same source counts both* (Version v1.0.0) [Data set]. Mercenomics.
+Azom, Kazi Affnann (2026). *private-security-workforce: official counts of private security guards by country, with police where the same source counts both* (Version v1.0.0) [Data set]. Mercenomics. https://doi.org/10.5281/zenodo.23768202
+
+- This version (v1.0.0): [10.5281/zenodo.23768202](https://doi.org/10.5281/zenodo.23768202)
+- All versions (always points to the latest): [10.5281/zenodo.23768201](https://doi.org/10.5281/zenodo.23768201)
 
 See also [`CITATION.cff`](CITATION.cff).
