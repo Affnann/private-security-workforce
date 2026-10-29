@@ -45,7 +45,16 @@ The BLS site refuses automated downloads, so these figures were read from the of
 
 **Terms:** Works of the US government, in the public domain.
 
+## South Africa: Private Security Industry Regulatory Authority (PSIRA)
+
+| File | What it is |
+|---|---|
+| `raw/south_africa/psira_active_security_officers.csv` | Registered security officers recorded as employed ("active") at 31 March, financial years 2010/11 to 2022/23 (2012/13 missing), with the report, PDF page and SHA-256 fingerprint of each source document |
+| `raw/south_africa/psira_second_readings.csv` | The same figures as stated in other PSIRA reports and presentations, used as a check |
+
+The reports were read from the copies tabled in Parliament and published by the Parliamentary Monitoring Group (pmg.org.za), because PSIRA's own site (psira.co.za) could not be reached from this workspace. The 2011/12 report on pmg.org.za is byte-for-byte the same size as the copy on PSIRA's site. The 2022/23 report's table "Growth of the security industry since 2014: security officers" (PDF page 45) gives 2014 to 2023; 2011 and 2012 come from the 2011/12 report (PDF page 26). The reports themselves are not stored in this repository; only the figures are used, with their source.
+
 ## Not included
 
-- **South Africa:** the Private Security Industry Regulatory Authority's annual reports could not be read from this workspace (the site's certificate fails to verify, and the reports are PDF files the browser could not extract). Planned for a later version.
-- **Police for the UK and Japan:** the sources used give no police headcount measured the same way as their guard counts.
+- **South Africa 2013, 2024 and 2025:** no copy of the 2012/13 figure was found, and the 2023/24 and 2024/25 reports are on PSIRA's site, which could not be read for this version.
+- **Police for Japan, South Africa and the UK:** the sources used give no police headcount measured the same way as their guard counts.

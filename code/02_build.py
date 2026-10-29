@@ -199,6 +199,17 @@ for r in csv.DictReader(open(RAW / "us" / "bls_oews_national_extract.csv")):
         value=int(r["tot_emp"]), unit="persons", rse_pct=r["emp_prse_pct"], source=BLS,
         source_file=r["source_url"], source_location=f"{r['source_file']}, OCC_CODE {r['occ_code']}, TOT_EMP")
 
+# ---------------------------------------------------------------- South Africa
+PSIRA = "Private Security Industry Regulatory Authority (South Africa), annual reports as tabled in Parliament"
+za = {}
+f = "south_africa/psira_active_security_officers.csv"
+for r in csv.DictReader(open(RAW / f)):
+    v = int(r["active_registered_security_officers"])
+    za[int(r["year_end"][:4])] = v
+    add(country="South Africa", period=r["year_end"], period_type="date", workforce="private_security",
+        measure="active_registered_security_officers", value=v, unit="persons", source=PSIRA,
+        source_file=r["source_url"], source_location=f"{r['source_report']}, PDF page {r['source_pdf_page']} (financial year {r['financial_year']})")
+
 with open(CLEAN / "security_workforce.csv", "w", newline="") as fh:
     w = csv.DictWriter(fh, fieldnames=COLS)
     w.writeheader()
@@ -237,6 +248,10 @@ for y in range(1987, 2026):
                         police=round(p, -2), police_measure="employed as Police (ANZSCO 4413), survey estimate",
                         guards_per_police_officer=f"{g / p:.2f}",
                         note="Both from the same survey; rounded to the nearest 100"))
+for y in sorted(za):
+    ann.append(dict(country="South Africa", year=y, reference_point="31 March (end of the financial year)",
+                    private_security=za[y], private_security_measure="security officers registered with PSIRA and recorded as employed (active)",
+                    note="Police not included: PSIRA does not count police"))
 for y in sorted(us["guards_employed"]):
     g, p = us["guards_employed"][y], us["police_employed"][y]
     ann.append(dict(country="United States", year=y, reference_point="May",

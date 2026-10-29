@@ -2,12 +2,13 @@
 
 Published by [Mercenomics](https://mercenomics.org), an independent data archive on the business of force for hire.
 
-How many private security guards four countries have, year by year, from each government's own records, and, where the same official source also counts police, how many guards there are for every police officer.
+How many private security guards five countries have, year by year, from each government's own records, and, where the same official source also counts police, how many guards there are for every police officer.
 
 | Country | Private security | Police | Years | Source |
 |---|---|---|---|---|
 | United States | Security guards employed | Police and sheriff's patrol officers employed | 2014-2025 | Bureau of Labor Statistics |
 | Japan | Security guards employed by authorised security companies | not included | 2007-2025 | National Police Agency |
+| South Africa | Security officers registered with the regulator and recorded as employed | not included | 2011-2023 | Private Security Industry Regulatory Authority |
 | United Kingdom | People holding an active security licence | not included | 2004-2026 | Security Industry Authority |
 | Australia | Security officers and guards employed | Police employed | 1986-2026 | Australian Bureau of Statistics |
 
@@ -17,25 +18,27 @@ How many private security guards four countries have, year by year, from each go
 
 - **United States:** 1,283,470 security guards in May 2025 against 670,520 police and sheriff's patrol officers, or **1.91 guards for every police officer**, up from 1.69 in 2014.
 - **Japan:** 596,985 security guards at the end of 2025, working for 10,949 authorised security companies.
+- **South Africa:** 577,444 security officers were registered and recorded as employed on 31 March 2023, up from 411,109 in March 2011.
 - **United Kingdom:** 460,138 people held an active Security Industry Authority licence on 1 January 2026, up from 242,985 in January 2008.
 - **Australia:** on average 62,800 security officers and guards and 75,300 police were employed in 2025, or **0.83 guards per police officer**. Australia has had roughly as many guards as police since the early 2000s, with the ratio moving between about 0.8 and 1.1.
 
 ## Things to know before comparing countries
 
-The four countries count different things, so **compare each country's trend over time, not the size of one country against another.**
+The five countries count different things, so **compare each country's trend over time, not the size of one country against another.**
 
 - **United States:** an employer survey (Occupational Employment and Wage Statistics). It counts people employed in the occupation in May each year, whether they work for a security company or directly for a shop, hospital or other employer. It does not count the self-employed. The `rse_pct` column gives the survey's own estimate of its sampling error.
 - **Japan:** the National Police Agency's count of guards employed by companies authorised under the Security Business Act, at 31 December. It covers every kind of guarding, from traffic guards to cash transport, and both regular and temporary staff (split from 2021).
+- **South Africa:** the Private Security Industry Regulatory Authority's count of registered security officers recorded as employed ("active") at the end of its financial year, 31 March. Many more people are registered but not working: 2,816,638 security officers were registered in March 2023, of whom 577,444 were active. Figures for 2013 are missing, and the reports for 2023/24 and 2024/25 could not be read for this version.
 - **United Kingdom:** the number of people holding at least one active licence from the Security Industry Authority. A licence shows who may legally do licensable security work, not who is working at that moment, and some security roles do not need a licence. One person can hold several licences, so licences outnumber licence holders. The Authority issued its first licences in 2004 (466 licence holders in March 2004), so the rise to about 2008 reflects licensing being taken up, not the workforce growing.
 - **Australia:** a household survey (Labour Force Survey), so the quarterly figures move up and down from sampling alone; for example police jump from 64,400 to 84,900 between two November quarters. The annual table averages the four quarters of each year. It counts people by the occupation of their main job.
-- **Police** are included only where the same source counts both guards and police (US and Australia), so that both numbers are measured the same way. For Japan and the UK the sources used do not give a matching police headcount.
+- **Police** are included only where the same source counts both guards and police (US and Australia), so that both numbers are measured the same way. For Japan, South Africa and the UK the sources used do not give a matching police headcount.
 
 ## The data
 
 | File | Contents |
 |---|---|
-| [`data/clean/annual_by_country.csv`](data/clean/annual_by_country.csv) | One comparable figure per country and year, with police and guards per police officer where available (92 rows) |
-| [`data/clean/security_workforce.csv`](data/clean/security_workforce.csv) | Every figure used, one row per country, period and measure, including UK licences by sector, Japan's regular and temporary guards and company counts, and Australia's quarterly estimates (2,522 rows) |
+| [`data/clean/annual_by_country.csv`](data/clean/annual_by_country.csv) | One comparable figure per country and year, with police and guards per police officer where available (104 rows) |
+| [`data/clean/security_workforce.csv`](data/clean/security_workforce.csv) | Every figure used, one row per country, period and measure, including UK licences by sector, Japan's regular and temporary guards and company counts, and Australia's quarterly estimates (2,534 rows) |
 
 Columns of `security_workforce.csv`:
 
@@ -63,7 +66,8 @@ Run by [`code/03_check.py`](code/03_check.py); results in [`data/clean/check_rep
 2. **United States:** for 2016 to 2023 each figure was read twice, from the Bureau's web tables and from its spreadsheets. All 16 match.
 3. **Australia:** the figures summed from the Bureau's detailed rows match its own summary table for all 80 November-quarter figures checked.
 4. **United Kingdom:** the monthly series has no missing months, and where the Authority's 2021 and 2026 releases overlap they differ by less than 0.1%. The sector columns add up to the total in every month except April 2018, where the source itself differs by one licence; it is kept as published.
-5. No figure appears twice, and nothing has been estimated or filled in.
+5. **South Africa:** ten figures appear again in other PSIRA reports or presentations, covering eight financial years, and all match. Summing the nine provinces in the 2021/22 report gives the national total for 2019/20 to 2021/22 exactly, but 1,101 fewer than the national table for 2018/19; the national table is used.
+6. No figure appears twice, and nothing has been estimated or filled in.
 
 ## Reproduce it
 
@@ -81,7 +85,7 @@ The Australian file (56 MB) is not stored in the repository; `01_download.py` fe
 
 ## Sources and license
 
-Sources, download dates and terms are in [`data/README.md`](data/README.md). Code: MIT (see [`LICENSE`](LICENSE)). The clean dataset: CC BY 4.0. Source material keeps its own terms: UK figures contain public sector information licensed under the Open Government Licence v3.0; Australian figures are from the Australian Bureau of Statistics under CC BY 4.0; Japanese figures are edited from National Police Agency publications (「警備業の概況」「警察白書」（警察庁）を加工して作成) under the Public Data License 1.0 and are not an official National Police Agency product; US figures are public-domain works of the US government.
+Sources, download dates and terms are in [`data/README.md`](data/README.md). Code: MIT (see [`LICENSE`](LICENSE)). The clean dataset: CC BY 4.0. Source material keeps its own terms: UK figures contain public sector information licensed under the Open Government Licence v3.0; Australian figures are from the Australian Bureau of Statistics under CC BY 4.0; South African figures are taken from PSIRA annual reports as tabled in Parliament (only the figures are used; the reports are not redistributed); Japanese figures are edited from National Police Agency publications (「警備業の概況」「警察白書」（警察庁）を加工して作成) under the Public Data License 1.0 and are not an official National Police Agency product; US figures are public-domain works of the US government.
 
 ## Cite
 

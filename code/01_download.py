@@ -1,6 +1,7 @@
 """Download the official source files into data/raw/.
 
-UK, Japan and Australia download directly. The US Bureau of Labor Statistics
+UK, Japan and Australia download directly. South Africa's figures were read from
+PSIRA annual reports (addresses listed in data/raw/south_africa/). The US Bureau of Labor Statistics
 blocks automated downloads, so its two figures per year were read from the
 official files listed in data/raw/us/ (see data/README.md); this script only
 prints those addresses.
@@ -49,6 +50,8 @@ def main():
         log[rel] = {"url": url, "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
         print(f"{rel}: {len(data):,} bytes")
     (RAW / "download_log.json").write_text(json.dumps(log, indent=2))
+    print("\nSouth African figures come from PSIRA annual reports on pmg.org.za; the address of each")
+    print("report is in data/raw/south_africa/psira_active_security_officers.csv.")
     print("\nUS figures come from these official files (download them in a browser):")
     for u in US_FILES:
         print(" ", u)

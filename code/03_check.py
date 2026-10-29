@@ -134,6 +134,18 @@ xlsx = {(r["year"], r["occ_code"]): int(r["tot_emp"]) for r in csv.DictReader(op
 same = [k for k in html if xlsx.get(k) == html[k]]
 check(len(same) == len(html), f"US: the spreadsheet figures match the BLS web tables for all {len(html)} figures read both ways (2016-2023)")
 
+# ---- South Africa: every figure read from a second PSIRA document
+main = {r["financial_year"]: int(r["active_registered_security_officers"]) for r in csv.DictReader(open(RAW / "south_africa/psira_active_security_officers.csv"))}
+sec = list(csv.DictReader(open(RAW / "south_africa/psira_second_readings.csv")))
+direct = [r for r in sec if not r["note"].startswith("sum of")]
+summed = [r for r in sec if r["note"].startswith("sum of")]
+ok = all(int(r["active_registered_security_officers"]) == main[r["financial_year"]] for r in direct)
+check(ok, f"South Africa: {len(direct)} figures stated again in other PSIRA reports or presentations all match the main table ({len({r['financial_year'] for r in direct})} financial years)")
+out.append("INFO South Africa: national totals from summing the nine provinces in the 2021/22 report's provincial table:")
+for r in summed:
+    a, b = int(r["active_registered_security_officers"]), main[r["financial_year"]]
+    out.append(f"    {r['financial_year']}: provinces sum to {a:,}; main table {b:,} (difference {a - b:+,})")
+
 # ---- general
 check(all(float(r["value"]) > 0 for r in rows), "Every value is positive")
 keys = [(r["country"], r["period"], r["measure"]) for r in rows]

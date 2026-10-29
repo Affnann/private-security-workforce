@@ -1,10 +1,10 @@
 {
   "title": "private-security-workforce: official counts of private security guards by country, with police where the same source counts both",
   "upload_type": "dataset",
-  "description": "<p>Official counts of private security guards in four countries, from each government's own records: the United States (security guards employed, 2014-2025, Bureau of Labor Statistics), Japan (security guards employed by authorised security companies, 2007-2025, National Police Agency), the United Kingdom (people holding an active Security Industry Authority licence, 2004-2026) and Australia (security officers and guards employed, 1986-2026, Australian Bureau of Statistics). Where the same source also counts police (US and Australia), the dataset gives police numbers and guards per police officer. The four countries count different things, so trends within a country are comparable but levels across countries are not. Every figure keeps its source file and location; the checks are documented in the repository.</p>",
+  "description": "<p>Official counts of private security guards in five countries, from each government's own records: the United States (security guards employed, 2014-2025, Bureau of Labor Statistics), Japan (security guards employed by authorised security companies, 2007-2025, National Police Agency), South Africa (registered security officers recorded as employed, 2011-2023, Private Security Industry Regulatory Authority), the United Kingdom (people holding an active Security Industry Authority licence, 2004-2026) and Australia (security officers and guards employed, 1986-2026, Australian Bureau of Statistics). Where the same source also counts police (US and Australia), the dataset gives police numbers and guards per police officer. The five countries count different things, so trends within a country are comparable but levels across countries are not. Every figure keeps its source file and location; the checks are documented in the repository.</p>",
   "creators": [
     {"name": "Azom, Kazi Affnann", "affiliation": "Mercenomics", "orcid": "0009-0001-5998-7642"}
   ],
   "license": "cc-by-4.0",
-  "keywords": ["private security", "security guards", "police", "private security industry", "labour statistics", "United States", "Japan", "United Kingdom", "Australia"]
+  "keywords": ["private security", "security guards", "police", "private security industry", "labour statistics", "United States", "Japan", "South Africa", "United Kingdom", "Australia"]
 }

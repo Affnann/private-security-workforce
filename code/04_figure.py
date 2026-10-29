@@ -20,12 +20,13 @@ for r in rows:
         ratio[r["country"]][int(r["year"])] = float(r["guards_per_police_officer"])
 
 style = {"United States": ("#15171A", "-"), "Japan": ("#8B2E2E", "-"),
-         "United Kingdom": ("#4A4F57", "--"), "Australia": ("#4A4F57", ":")}
+         "United Kingdom": ("#4A4F57", "--"), "South Africa": ("#8B2E2E", "--"), "Australia": ("#4A4F57", ":")}
 fig, (a, b) = plt.subplots(1, 2, figsize=(11, 4.2), gridspec_kw={"width_ratios": [1.25, 1]})
-for c in ["United States", "Japan", "United Kingdom", "Australia"]:
-    xs = [x for x in sorted(ps[c]) if x >= 2008]  # UK licensing was still being taken up before 2008
+for c in ["United States", "Japan", "South Africa", "United Kingdom", "Australia"]:
+    have = [x for x in sorted(ps[c]) if x >= 2008]  # UK licensing was still being taken up before 2008
+    xs = list(range(have[0], have[-1] + 1))  # missing years are left as gaps, not joined up
     col, ls = style[c]
-    a.plot(xs, [ps[c][x] for x in xs], color=col, ls=ls, lw=1.8, label=c)
+    a.plot(xs, [ps[c].get(x, float("nan")) for x in xs], color=col, ls=ls, lw=1.8, label=c, marker="o" if c == "South Africa" else None, ms=2.5)
 a.set_title("Private security workforce (thousands)", loc="left", fontsize=11)
 a.set_xlim(2008, 2026)
 a.set_ylim(0, None)

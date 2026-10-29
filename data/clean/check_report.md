@@ -1,6 +1,6 @@
 # Check report
 
-2522 rows checked. Failures: 0.
+2534 rows checked. Failures: 0.
 
 - PASS UK monthly series has every month from 2004-03 to 2021-09 (211 months)
 - PASS UK: every month has at least as many licences as licence holders (one person can hold several licences)
@@ -20,5 +20,11 @@
 - PASS Japan 2025 total matches the report text (令和７年12月末現在、59万6,985人)
 - PASS Australia: summed rows match the ABS's own Table 1 for all 80 November-quarter figures checked
 - PASS US: the spreadsheet figures match the BLS web tables for all 16 figures read both ways (2016-2023)
+- PASS South Africa: 10 figures stated again in other PSIRA reports or presentations all match the main table (8 financial years)
+- INFO South Africa: national totals from summing the nine provinces in the 2021/22 report's provincial table:
+    2018/19: provinces sum to 533,188; main table 534,289 (difference -1,101)
+    2019/20: provinces sum to 548,642; main table 548,642 (difference +0)
+    2020/21: provinces sum to 557,277; main table 557,277 (difference +0)
+    2021/22: provinces sum to 586,042; main table 586,042 (difference +0)
 - PASS Every value is positive
 - PASS No country, period and measure appears twice
