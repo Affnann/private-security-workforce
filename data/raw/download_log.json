@@ -1,0 +1,58 @@
+{
+  "uk/sia-licences-applications-licence-holders-by-year.ods": {
+    "url": "https://assets.publishing.service.gov.uk/media/614b16e5e90e077a368ffbfc/sia-licences-applications-licence-holders-by-year.ods",
+    "page": "https://www.gov.uk/government/publications/sia-licences-applications-and-licence-holders-by-year",
+    "accessed": "2026-10-29",
+    "bytes": 33433,
+    "sha256": "1a809a27b4d815ccfac75a65a99414e2609b7cc1ec274db4130b2460c2f7e17f"
+  },
+  "uk/sia-2a-headcount.csv": {
+    "url": "https://assets.publishing.service.gov.uk/media/69cb9f2fb5ac47b0874f3f1d/sia-2a-headcount.csv",
+    "page": "https://www.gov.uk/government/publications/statistical-data-about-sia-licence-holders-2020-to-2025",
+    "accessed": "2026-10-29",
+    "bytes": 926,
+    "sha256": "e44ff824558a4418eec65aa72984bd6e73cf30f69546b76b8d8d0d614c43925e"
+  },
+  "japan/npa_reiwa7data.csv": {
+    "url": "https://www.npa.go.jp/publications/statistics/safetylife/reiwa7data.csv",
+    "page": "https://www.npa.go.jp/publications/statistics/safetylife/toukei.html",
+    "accessed": "2026-10-29",
+    "bytes": 8429,
+    "sha256": "d19de8e6a8f5bace5e89ee594bd3f3b3ee4260f88c877cd3a3d807c3e0053d82"
+  },
+  "japan/npa_reiwa7keibigaikyo.pdf": {
+    "url": "https://www.npa.go.jp/publications/statistics/safetylife/reiwa7keibigaikyo.pdf",
+    "page": "https://www.npa.go.jp/publications/statistics/safetylife/toukei.html",
+    "accessed": "2026-10-29",
+    "bytes": 1316201,
+    "sha256": "38ed1ff07881238a13963f808bb6193963b186b2b947c132c01c1cd1b0798d4a"
+  },
+  "japan/npa_whitepaper_r04_table2-44.csv": {
+    "url": "https://www.npa.go.jp/hakusyo/r04/toukei/02/44.csv",
+    "page": "https://www.npa.go.jp/hakusyo/r04/data.html",
+    "accessed": "2026-10-29",
+    "bytes": 335,
+    "sha256": "14b6413531d9e3a00b7e770412828563371ecc3745c78952ea0609fc3b569fe0"
+  },
+  "japan/npa_whitepaper_r01_table2-46.xls": {
+    "url": "https://www.npa.go.jp/hakusyo/r01/toukei/02/46.xls",
+    "page": "https://www.npa.go.jp/hakusyo/r01/data.html",
+    "accessed": "2026-10-29",
+    "bytes": 26624,
+    "sha256": "0f1cfad4d3ee296dd2ae8e809be91e08e367731c6f10ab6751e454ca25e36405"
+  },
+  "japan/npa_whitepaper_h29_table2-46.xls": {
+    "url": "https://www.npa.go.jp/hakusyo/h29/toukei/02/46.xls",
+    "page": "https://www.npa.go.jp/hakusyo/h29/data.html",
+    "accessed": "2026-10-29",
+    "bytes": 26112,
+    "sha256": "a39c41edeaaad3ab9f2ec00f2effcf3f21c1d3fcb42f648cb66cd01d113faec8"
+  },
+  "australia/EQ08.xlsx": {
+    "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia-detailed/mar-2026/EQ08.xlsx",
+    "page": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia-detailed/latest-release",
+    "accessed": "2026-10-29",
+    "bytes": 56035700,
+    "sha256": "65857d7a254785dc9a832dec57c742aae52de0019a320575cb1c060355f192fe"
+  }
+}

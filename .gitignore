@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# 56 MB; fetched by code/01_download.py. The rows used are kept in eq08_protective_service_extract.csv
+data/raw/australia/EQ08.xlsx

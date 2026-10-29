@@ -1,0 +1,25 @@
+year,occ_code,occ_title,tot_emp,emp_prse_pct,source_file,source_url
+2025,33-9032,Security Guards,1283470,0.4,oesm25nat/national_M2025_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm25nat.zip
+2025,33-3051,Police and Sheriff's Patrol Officers,670520,0.3,oesm25nat/national_M2025_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm25nat.zip
+2024,33-9032,Security Guards,1241770,0.5,oesm24nat/national_M2024_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm24nat.zip
+2024,33-3051,Police and Sheriff's Patrol Officers,666990,0.4,oesm24nat/national_M2024_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm24nat.zip
+2023,33-9032,Security Guards,1202940,0.3,oesm23nat/national_M2023_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm23nat.zip
+2023,33-3051,Police and Sheriff's Patrol Officers,646310,0.5,oesm23nat/national_M2023_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm23nat.zip
+2022,33-9032,Security Guards,1124890,0.4,oesm22nat/national_M2022_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm22nat.zip
+2022,33-3051,Police and Sheriff's Patrol Officers,655890,0.3,oesm22nat/national_M2022_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm22nat.zip
+2021,33-9032,Security Guards,1057100,0.4,oesm21nat/national_M2021_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm21nat.zip
+2021,33-3051,Police and Sheriff's Patrol Officers,665380,0.4,oesm21nat/national_M2021_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm21nat.zip
+2020,33-9032,Security Guards,1054400,1.1,oesm20nat/national_M2020_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm20nat.zip
+2020,33-3051,Police and Sheriff's Patrol Officers,654900,0.5,oesm20nat/national_M2020_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm20nat.zip
+2019,33-9032,Security Guards,1126370,0.9,oesm19nat/national_M2019_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm19nat.zip
+2019,33-3051,Police and Sheriff's Patrol Officers,665280,0.5,oesm19nat/national_M2019_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm19nat.zip
+2018,33-9032,Security Guards,1114380,0.9,oesm18nat/national_M2018_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm18nat.zip
+2018,33-3051,Police and Sheriff's Patrol Officers,661330,0.5,oesm18nat/national_M2018_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm18nat.zip
+2017,33-9032,Security Guards,1105440,0.9,oesm17nat/national_M2017_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm17nat.zip
+2017,33-3051,Police and Sheriff's Patrol Officers,662390,0.5,oesm17nat/national_M2017_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm17nat.zip
+2016,33-9032,Security Guards,1103120,0.9,oesm16nat/national_M2016_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm16nat.zip
+2016,33-3051,Police and Sheriff's Patrol Officers,657690,0.6,oesm16nat/national_M2016_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm16nat.zip
+2015,33-9032,Security Guards,1097660,0.9,oesm15nat/national_M2015_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm15nat.zip
+2015,33-3051,Police and Sheriff's Patrol Officers,653740,0.6,oesm15nat/national_M2015_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm15nat.zip
+2014,33-9032,Security Guards,1077520,0.9,oesm14nat/national_M2014_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm14nat.zip
+2014,33-3051,Police and Sheriff's Patrol Officers,638810,0.6,oesm14nat/national_M2014_dl.xlsx,https://www.bls.gov/oes/special-requests/oesm14nat.zip
